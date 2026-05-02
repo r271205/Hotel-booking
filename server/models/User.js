@@ -15,7 +15,7 @@ const userSchema = mongoose.Schema({
     },
     image:{
         type:String,
-        required:true
+        default: ""
     },
     role:{
         type:String,
@@ -24,6 +24,7 @@ const userSchema = mongoose.Schema({
     },
     recentSearchCities:[{
         type:String,
+        default: ""
     }], 
 },{timestamps : true});
 
